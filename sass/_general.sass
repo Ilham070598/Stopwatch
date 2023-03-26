@@ -1,0 +1,92 @@
+body 
+	background-color: #353638 
+	margin: 0 auto
+	width: 825px
+	padding-left: 124px
+	padding-right: 124px
+.blocks 
+	display: flex
+	justify-content: space-evenly 
+	margin-top: 22px 
+	flex-wrap: wrap
+	justify-content: flex-start
+.stopwatch 
+	display: inline-block 
+	width: 225px 
+	height: 120px 
+	background: #696969 
+	margin-top: 45px
+	margin-left: 50px
+	&:before
+		margin-left: 124px
+	&_add
+		display: flex
+	.stopwatch_time 
+		margin: 19px 
+		font-style: normal 
+		font-weight: 400 
+		font-size: 22px 
+		line-height: 21px 
+		text-align: center 
+		color: $inactive-color 
+		&_active
+			color: $active-color 
+	.line 
+		margin: 0px 
+		width: 223px 
+		height: 0px 
+		border: 1px solid $inactive-color  
+		color: $inactive-color 
+		&_active
+			border: 1px solid $active-color 
+.buttons 
+	display: inline-block 
+	margin-top: 15px 
+	cursor: pointer
+	.material-icons 
+		font-size: 30px 
+		color: #9E9E9E 
+		background-color: rgba(28,28,28,0)
+		border: none
+		cursor: pointer
+		color: $inactive-color 
+		&_play_active
+			color: $active-color 
+		&_pause
+			display: none
+			cursor: pointer
+			color: $inactive-color 
+			&_active
+			color: $active-color 
+.buttons_play 
+	margin-left: 70px 
+	height: 30px 
+	width: 30px 
+	display: inline-block 
+	background-color: rgba(28,28,28,0)
+	cursor: pointer
+	color: $inactive-color 
+	&_active
+			color: $active-color 
+.buttons_stop 
+	margin-left: 11px 
+	height: 30px 
+	width: 30px 
+	display: inline-block 
+	cursor: pointer
+	color: $inactive-color 
+	&_active
+			color: $active-color 
+.addStopwatch
+	background-color: rgba(28,28,28,0)
+	border: none
+	margin: 30px auto
+	height: auto
+	display: flex
+	align-items: center
+	justify-content: center 
+	color: $inactive-color 
+	font-size: 50px
+	cursor: pointer
+	&:hover 
+		color: $active-color 

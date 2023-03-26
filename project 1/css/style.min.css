@@ -1,0 +1,131 @@
+* {
+  font-family: "Gotham Pro", sans-serif;
+}
+
+body {
+  background-color: #353638;
+  margin: 0 auto;
+  width: 825px;
+  padding-left: 124px;
+  padding-right: 124px;
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 22px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.stopwatch {
+  display: inline-block;
+  width: 225px;
+  height: 120px;
+  background: #696969;
+  margin-top: 45px;
+  margin-left: 50px;
+}
+.stopwatch:before {
+  margin-left: 124px;
+}
+.stopwatch_add {
+  display: flex;
+}
+.stopwatch .stopwatch_time {
+  margin: 19px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 21px;
+  text-align: center;
+  color: rgb(158, 158, 158);
+}
+.stopwatch .stopwatch_time_active {
+  color: rgb(255, 255, 255);
+}
+.stopwatch .line {
+  margin: 0px;
+  width: 223px;
+  height: 0px;
+  border: 1px solid rgb(158, 158, 158);
+  color: rgb(158, 158, 158);
+}
+.stopwatch .line_active {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.buttons {
+  display: inline-block;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.buttons .material-icons {
+  font-size: 30px;
+  color: #9E9E9E;
+  background-color: rgba(28, 28, 28, 0);
+  border: none;
+  cursor: pointer;
+  color: rgb(158, 158, 158);
+}
+.buttons .material-icons_play_active {
+  color: rgb(255, 255, 255);
+}
+.buttons .material-icons_pause {
+  display: none;
+  cursor: pointer;
+  color: rgb(158, 158, 158);
+  color: rgb(255, 255, 255);
+}
+.buttons_play {
+  margin-left: 70px;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-color: rgba(28, 28, 28, 0);
+  cursor: pointer;
+  color: rgb(158, 158, 158);
+}
+.buttons_play_active {
+  color: rgb(255, 255, 255);
+}
+
+.buttons_stop {
+  margin-left: 11px;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(158, 158, 158);
+}
+.buttons_stop_active {
+  color: rgb(255, 255, 255);
+}
+
+.addStopwatch {
+  background-color: rgba(28, 28, 28, 0);
+  border: none;
+  margin: 30px auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(158, 158, 158);
+  font-size: 50px;
+  cursor: pointer;
+}
+.addStopwatch:hover {
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1024px) {
+  body {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    width: 325px;
+    padding: 0 0 0 0;
+  }
+}/*# sourceMappingURL=style.min.css.map */
